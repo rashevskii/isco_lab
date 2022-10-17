@@ -1,0 +1,18 @@
+.blockContainer {
+  max-width: 1388px;
+  margin: 0 auto;
+}
+.headerWrapper {
+  min-height: 850px;
+  position: relative;
+}
+.headerWrapper::after {
+  position: absolute;
+  content: "";
+  width: 166px;
+  height: 166px;
+  background: url(../../assets/images/waves.svg) center no-repeat;
+  bottom: -42px;
+  left: -58px;
+  z-index: -1;
+}
