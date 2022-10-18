@@ -1,0 +1,48 @@
+@import '../../scss/variables.scss';
+
+.aboutUsWrapper {
+  padding-top: 90px;
+  background: url(../../assets/images/aboutUs-bg.png) left 80% no-repeat;
+}
+.aboutUsInner {
+  position: relative;
+  padding-bottom: 90px;
+}
+.aboutUsInner::after {
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: url(../../assets/images/lines.svg) center no-repeat;
+  transform: rotate(-15deg);
+  right: -195px;
+  bottom: -3%;
+}
+.aboutUsName {
+  min-height: 1068px;
+  background: url(../../assets/images/aboutUs-img.png) center no-repeat;
+}
+.aboutUsNameContainer {
+  position: relative;
+}
+.blockName {
+  max-width: 462px;
+  position: absolute;
+  top: 310px;
+  left: 235px;
+}
+.organisationType {
+  font-family: $montReg;
+  font-size: 18px;
+  line-height: 22px;
+  color: $white;
+  margin-bottom: 12px;
+}
+.organisationName {
+  font-family: $montSemi;
+  font-size: 36px;
+  line-height: 44px;
+  color: $white;
+  margin-top: 0;
+  margin-bottom: 50px;
+}

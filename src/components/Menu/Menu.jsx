@@ -1,26 +1,19 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import { Main } from "../Main/Main";
+import { Link } from "react-router-dom";
 import "./Menu.scss";
 import mainLogo from "../../assets/icons/logo.svg";
 
 export const Menu = () => {
   return (
     <div className="menuWrapper">
-      <Router>
-        <Link to="/" className="logo">
-          <img src={mainLogo} alt="Логотип" />
-          <span className="logoName">ISCO LAB</span>
-        </Link>
-
-        <Routes>
-          <Route path="/" element={Main} />
-        </Routes>
-      </Router>
+      <Link to="/" className="logo">
+        <img src={mainLogo} alt="Логотип" />
+        <span className="logoName">ISCO LAB</span>
+      </Link>
       <nav className="menu">
         <ul className="menuInner">
           <li className="menuItem">
-            <a href="#" className="menuLink">
+            <a href="#aboutUs" className="menuLink">
               О нас
             </a>
           </li>

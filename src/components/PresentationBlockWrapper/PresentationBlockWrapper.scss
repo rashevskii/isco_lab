@@ -1,0 +1,23 @@
+.presentationBlockWrapper {
+  position: relative;
+  padding: 90px 155px 53px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.presentationBlockWrapper::after,
+.presentationBlockWrapper::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 1374px;
+  height: 6px;
+  background: url(../../assets/images/dottes.png) center no-repeat;
+}
+.presentationBlockWrapper::after {
+  top: 0;
+}
+.presentationBlockWrapper::before {
+  bottom: 0;
+}

@@ -1,0 +1,25 @@
+@import '../../scss/variables.scss';
+
+.mainBtn {
+  background-color: $white;
+  border-radius: 7px; 
+  font-family: $montMed;
+  font-size: 14px;
+  padding: 10px 40px 10px 32px;
+  border: none;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  color: $black;
+}
+.mainBtn::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 8px;
+  background: url(../../assets/icons/arrow.svg) center no-repeat;
+  right: 10%;
+  bottom: 50%;
+  transform: translateY(50%);
+}

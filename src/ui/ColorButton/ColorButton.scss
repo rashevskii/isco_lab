@@ -1,0 +1,11 @@
+@import '../../scss/variables.scss';
+
+.colorButton {
+  background: linear-gradient(295.72deg, $orange 13.25%, $red 81.31%);
+  border-radius: 9px;
+  font-family: $montMed;
+  font-size: 20px;
+  line-height: 24px;
+  color: $white;
+  text-decoration: none;
+}

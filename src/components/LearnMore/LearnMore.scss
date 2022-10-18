@@ -1,0 +1,33 @@
+@import '../../scss/variables.scss';
+
+.youCanStayDesc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.youCanStayText {
+  font-family: $montMed;
+  font-size: 22px;
+  line-height: 27px;
+  color: $white;
+}
+.firstStep {
+  font-family: $montReg;
+  font-size: 18px;
+  line-height: 22px;
+  text-decoration-line: underline;
+  color: $almostWhite;
+}
+.youCanStayBlock {
+  max-width: 674px;
+  min-height: 240px;
+  border-radius: 29px;
+}
+.youCanStayVolunteer {
+
+}
+.youCanStaySponsor {
+  
+}
+
+

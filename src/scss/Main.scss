@@ -9,6 +9,7 @@
        url('../assets/fonts/MontserratRegular.woff') format('woff'),
        url('../assets/fonts/MontserratRegular.ttf') format('truetype'),
        url('../assets/fonts/MontserratRegular.svg#MontserratRegular') format('svg');
+  font-display: swap;
 };
 
 @font-face {
@@ -19,6 +20,7 @@
        url('../assets/fonts/MontserratMedium.woff') format('woff'),
        url('../assets/fonts/MontserratMedium.ttf') format('truetype'),
        url('../assets/fonts/MontserratMedium.svg#MontserratMedium') format('svg');
+  font-display: swap;
 };
 
 @font-face {
@@ -29,6 +31,7 @@
        url('../assets/fonts/MontserratSemiBold.woff') format('woff'),
        url('../assets/fonts/MontserratSemiBold.ttf') format('truetype'),
        url('../assets/fonts/MontserratSemiBold.svg#MontserratSemiBold') format('svg');
+  font-display: swap;
 };
 
 @font-face {
@@ -39,20 +42,30 @@
        url('../assets/fonts/TenorSansRegular.woff') format('woff'),
        url('../assets/fonts/TenorSansRegular.ttf') format('truetype'),
        url('../assets/fonts/TenorSansRegular.svg#TenorSansRegular') format('svg');
+  font-display: swap;
 };
 
 @font-face {
   font-family: $roadRage;
-  src: url('../assets/fonts/RoadRageRegular.eot');
-  src: url('../assets/fonts/RoadRageRegular.eot') format('embedded-opentype'),
-       url('../assets/fonts/RoadRageRegular.woff2') format('woff2'),
-       url('../assets/fonts/RoadRageRegular.woff') format('woff'),
-       url('../assets/fonts/RoadRageRegular.ttf') format('truetype'),
-       url('../assets/fonts/RoadRageRegular.svg#RoadRageRegular') format('svg');
-};
+  src: url('../assets/fonts/RoadRage.eot');
+  src: url('../assets/fonts/RoadRage.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/RoadRage.woff2') format('woff2'),
+      url('../assets/fonts/RoadRage.woff') format('woff'),
+      url('../assets/fonts/RoadRage.ttf') format('truetype'),
+      url('../assets/fonts/RoadRage.svg#RoadRage') format('svg');
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
-  background-color: #242424;
+  background-color: $mainBg;
   font-family: $montReg;
 };
 
