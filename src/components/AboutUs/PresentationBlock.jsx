@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import './PresentationBlock.scss';
+import './AboutUs.scss';
 
 export const PresentationBlock = ({ title, text, target }) => {
   console.log("target", target);

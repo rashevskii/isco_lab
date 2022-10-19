@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Menu.scss";
-import mainLogo from "../../assets/icons/logo.svg";
+import mainLogo from "../../../assets/icons/logo.svg";
 
 export const Menu = () => {
   return (
@@ -18,17 +18,17 @@ export const Menu = () => {
             </a>
           </li>
           <li className="menuItem">
-            <a href="#" className="menuLink">
+            <a href="#learnMore" className="menuLink">
               Узнайте больше
             </a>
           </li>
           <li className="menuItem">
-            <a href="#" className="menuLink">
+            <a href="#services" className="menuLink">
               Услуги
             </a>
           </li>
           <li className="menuItem">
-            <a href="#" className="menuLink">
+            <a href="#news" className="menuLink">
               Новости
             </a>
           </li>

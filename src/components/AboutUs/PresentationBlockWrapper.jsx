@@ -1,5 +1,5 @@
-import { PresentationBlock } from "../PresentationBlock/PresentationBlock";
-import './PresentationBlockWrapper.scss';
+import { PresentationBlock } from "./PresentationBlock";
+import './AboutUs.scss';
 
 export const PresentationBlockWrapper = () => {
   return (

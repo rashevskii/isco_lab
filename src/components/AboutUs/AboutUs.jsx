@@ -1,7 +1,6 @@
-import { Link } from "react-router-dom";
 import { WhiteButton } from "../../ui/WhiteButton/WhiteButton";
-import { HeaderSection } from "../HeaderSection/HeaderSection";
-import { PresentationBlockWrapper } from "../PresentationBlockWrapper/PresentationBlockWrapper";
+import { HeaderSection } from "../../ui/HeaderSection/HeaderSection";
+import { PresentationBlockWrapper } from "./PresentationBlockWrapper";
 import './AboutUs.scss';
 
 export const AboutUs = () => {

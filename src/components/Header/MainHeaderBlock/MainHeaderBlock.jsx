@@ -1,5 +1,5 @@
 import React from "react";
-import { WhiteButton } from "../../ui/WhiteButton/WhiteButton";
+import { WhiteButton } from "../../../ui/WhiteButton/WhiteButton";
 import './MainHeaderBlock.scss'; 
 
 export const MainHeaderBlock = ({ title, text, btn, img }) => {

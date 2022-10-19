@@ -1,0 +1,90 @@
+@import "../../scss/variables.scss";
+
+.newsWrapper {
+  margin-top: 170px;
+}
+.coupleItems {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.newsItem {
+  width: 674px;
+  height: 390px;
+  border-radius: 20px;
+  position: relative;
+}
+.NewsItemImg {
+  position: relative;
+  z-index: 1;
+  border-radius: 20px;
+}
+.textBlock {
+  position: absolute;
+  z-index: 2;
+  background: linear-gradient(295.72deg, $orange 13.25%, $red 81.31%);
+  box-shadow: 0px -4px 8px rgba($black, 0.29);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-height: 110px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 9px 29px 29px 29px;
+}
+.textBlock p {
+  font-family: $montMed;
+  font-size: 15px;
+  line-height: 18px;
+  color: $white;
+  margin: 0;
+  text-align: left;
+}
+.carousel.carousel-slider {
+  overflow: visible !important;
+}
+.carousel .control-prev.control-arrow {
+  left: -50px !important;
+}
+.carousel.carousel-slider .control-arrow:hover {
+  background: none !important;
+}
+.carousel .control-next.control-arrow {
+  right: -50px !important;
+}
+.carousel .control-arrow:before,
+.carousel.carousel-slider .control-arrow:before {
+  border: none !important;
+  width: 40px;
+  height: 40px;
+}
+.carousel .control-arrow,
+.carousel.carousel-slider .control-arrow {
+  opacity: 1 !important;
+}
+.carousel .control-next.control-arrow:before {
+  background: url(../../assets/icons/right-arrow.svg) center no-repeat;
+}
+.carousel .control-prev.control-arrow:before {
+  background: url(../../assets/icons/left-arrow.svg) center no-repeat;
+}
+.carousel .control-dots {
+  bottom: -38px !important;
+}
+.carousel .control-dots {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.carousel .control-dots .dot {
+  flex: 1 !important;
+  margin: 0 !important;
+  border-radius: 12px !important;
+  width: auto !important;
+  height: 3px !important;
+  background: $dots !important;
+}
+.carousel .control-dots .dot.selected, .carousel .control-dots .dot:hover {
+  background: linear-gradient(295.72deg, $orange 13.25%, $red 81.31%) !important;
+  height: 5px !important;
+}

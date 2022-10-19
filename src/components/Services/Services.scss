@@ -1,0 +1,91 @@
+@import '../../scss/variables.scss';
+
+.servicesWrapper {
+  margin-top: 130px;
+}
+.servicesInner {
+  position: relative;
+}
+.servicesInner::after,
+.servicesInner::before {
+  content: '';
+  position: absolute;
+}
+.servicesInner::after {
+  width: 120px;
+  height: 120px;
+  background: url(../../assets/images/lines.svg) center no-repeat;
+  top: 310px;
+  right: -200px;
+}
+.servicesInner::before {
+  width: 166px;
+  height: 166px;
+  background: url(../../assets/images/waves.svg) center no-repeat;
+  bottom: 100px;
+  left: -185px;
+}
+.servicesBlockWrapper {
+  position: relative;
+  padding: 97px 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.servicesBlockWrapper::after,
+.servicesBlockWrapper::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 1374px;
+  height: 6px;
+  background: url(../../assets/images/dottes.png) center no-repeat;
+}
+.servicesBlockWrapper::after {
+  top: 0;
+}
+.servicesBlockWrapper::before {
+  bottom: 0;
+}
+.servicesBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 370px;
+  height: 370px;
+}
+.servicesTitle {
+  font-family: $montSemi;
+  font-size: 20px;
+  line-height: 24px;
+  color: $white;
+  text-align: center;
+}
+.servicesText {
+  font-family: $montReg;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: $white;
+  max-width: 260px;
+}
+.servBlock1 {
+  background: url(../../assets/images/services-1.png);
+}
+.servBlock2 {
+  background: url(../../assets/images/services-2.png);
+}
+.servBlock3 {
+  background: url(../../assets/images/services-3.png);
+}
+.servBlock4 {
+  background: url(../../assets/images/services-4.png);
+}
+.servBlock5 {
+  background: url(../../assets/images/services-5.png);
+}
+.servBlock6 {
+  background: url(../../assets/images/services-6.png);
+}

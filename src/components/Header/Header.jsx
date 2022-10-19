@@ -1,6 +1,6 @@
 import React from "react";
-import { MainHeaderBlock } from "../MainHeaderBlock/MainHeaderBlock";
-import { Menu } from "../Menu/Menu";
+import { MainHeaderBlock } from "./MainHeaderBlock/MainHeaderBlock";
+import { Menu } from "./Menu/Menu";
 import "./Header.scss";
 import pic from '../../assets/images/modelling.png';
 
