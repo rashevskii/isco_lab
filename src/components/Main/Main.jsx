@@ -2,6 +2,7 @@ import React from "react";
 import { AboutUs } from "../AboutUs/AboutUs";
 import { Header } from '../Header/Header';
 import { LearnMore } from "../LearnMore/LearnMore";
+import { WeOnMap } from "../WeOnMap/WeOnMap";
 import { News } from "../News/News";
 import { Partners } from "../Partners/Partners";
 import { Reviews } from "../Reviews/Reviews";
@@ -18,6 +19,7 @@ export const Main = () => {
       <News />
       <Partners />
       <Reviews />
+      <WeOnMap />
     </div>
   )
 };
