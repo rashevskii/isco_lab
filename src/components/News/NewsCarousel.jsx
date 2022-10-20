@@ -5,7 +5,7 @@ import newsBg from "../../assets/images/news-bg.jpg";
 
 export const NewsCarousel = () => {
   return (
-    <Carousel showStatus={false}>
+    <Carousel infiniteLoop={true} showStatus={false}>
       <div className="coupleItems">
         <NewsItem
           img={newsBg}

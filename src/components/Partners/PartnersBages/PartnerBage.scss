@@ -1,0 +1,63 @@
+@import '../../../scss/variables.scss';
+
+.partnerBage {
+  width: 49%;
+  height: auto;
+  min-height: 100%;
+  border-radius: 38px;
+  padding: 24px 37px;
+  margin-bottom: 34px;
+}
+.bage1 {
+  background: $white url(../../../assets/images/bage1.png) bottom right no-repeat;
+}
+.bage2 {
+  background: $white url(../../../assets/images/bage2.png) bottom right no-repeat;
+}
+.bage3 {
+  background: $white url(../../../assets/images/bage3.png) bottom right no-repeat;
+}
+.bage4 {
+  background: $white url(../../../assets/images/bage4.png) bottom right no-repeat;
+}
+.partnerBageInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.partnerLogo {
+  max-width: 156px;
+}
+.partnerAbout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.partnerAboutName {
+  font-family: $montSemi;
+  font-size: 26px;
+  line-height: 32px;
+  background: linear-gradient(295.72deg, #EE6400 13.25%, #C52F00 81.31%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-align: left;
+  margin: 0;
+}
+.partnerAboutDesc {
+  max-width: 416px;
+  font-family: $montMed;
+  font-size: 16px;
+  line-height: 20px;
+  color: $dark_1;
+  text-align: left;
+  margin-top: 0;
+}
+.partnerLinks {
+  display: flex;
+  align-items: center;
+}
+.partnerLink {
+  margin-right: 16px;
+}

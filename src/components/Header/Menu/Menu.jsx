@@ -33,22 +33,22 @@ export const Menu = () => {
             </a>
           </li>
           <li className="menuItem">
-            <a href="#" className="menuLink">
+            <a href="#partners" className="menuLink">
               Партнёры
             </a>
           </li>
           <li className="menuItem">
-            <a href="#" className="menuLink">
+            <a href="#reviews" className="menuLink">
               Отзывы
             </a>
           </li>
           <li className="menuItem">
-            <a href="#" className="menuLink">
+            <a href="#map" className="menuLink">
               Карта
             </a>
           </li>
           <li className="menuItem">
-            <a href="#" className="menuLink">
+            <a href="#feedback" className="menuLink">
               Обратная связь
             </a>
           </li>
