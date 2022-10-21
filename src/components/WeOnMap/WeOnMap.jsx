@@ -4,15 +4,16 @@ import "./WeOnMap.scss";
 export const WeOnMap = () => {
   return (
     <YMaps>
-      <div className="">
+      <div className="mapWrapper" id="map">
         <Map
-          width={"80%"}
-          height={894}
-          state={{ center: [55.64604, 37.677077], zoom: 17 }}
+          state={{ center: [55.64604, 37.677077], zoom: 17, behaviors: ["disable('scrollZoom')"] }}
+          className="map"
         >
           <Placemark
             geometry={[55.64604, 37.677077]}
-            options={{ preset: 'islands#icon' }}
+            options={{ 
+              preset: 'islands#icon',
+            }}
           />
         </Map>
       </div>

@@ -8,6 +8,7 @@ import { Partners } from "../Partners/Partners";
 import { Reviews } from "../Reviews/Reviews";
 import { Services } from "../Services/Services";
 import './Main.scss';
+import { Footer } from "../Footer/Footer";
 
 export const Main = () => {
   return (
@@ -20,6 +21,7 @@ export const Main = () => {
       <Partners />
       <Reviews />
       <WeOnMap />
+      <Footer />
     </div>
   )
 };

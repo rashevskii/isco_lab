@@ -15,7 +15,7 @@ export const AboutUs = () => {
           <div className="blockName">
             <p className="organisationType">Автономная Некомерческая Организация</p>
             <p className="organisationName">“ЛАБОРАТОРИЯ РАЗВИТИЯ ИННОВАЦИОННОЙ СОЦИАЛЬНОЙ КОРПОРАЦИИ - ИСКО”</p>
-            <WhiteButton location={'/'} title={'О нас'} anotherStyles={{ "font-size": 20, "padding": "15px 30px 15px 25px" }} />
+            <WhiteButton location={'/'} title={'О нас'} anotherStyles={{ "fontSize": 20, "padding": "15px 30px 15px 25px" }} />
           </div>
         </div>
       </div>

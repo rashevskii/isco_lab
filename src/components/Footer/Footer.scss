@@ -1,0 +1,117 @@
+@import '../../scss/variables.scss';
+
+.footerWrapper {
+  background: url(../../assets/images/footer-bg.png) top left no-repeat;
+  padding-top: 245px;
+  padding-bottom: 100px;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: '';
+    width: 230px;
+    height: 342px;
+    background: url(../../assets/images/square-dotts.svg) center no-repeat;
+    top: 215px;
+    right: 0px;
+  }
+  &::before {
+    position: absolute;
+    content: '';
+    width: 136px;
+    height: 136px;
+    background: url(../../assets/images/circle.png) center no-repeat;
+    bottom: 120px;
+    left: 50px;
+  }
+}
+.feedback {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contactBlock {
+  display: flex;
+  align-items: center;
+  margin-bottom: 61px;
+}
+.contactDataTitle{
+  font-family: $montSemi;
+  font-size: 25px;
+  line-height: 30px;
+  color: $white;
+  margin: 0;
+}
+.contactDataText {
+  max-width: 345px;
+  font-family: $montReg;
+  font-size: 16px;
+  line-height: 20px;
+  color: $gray_1;
+  margin: 0;
+  a {
+    color: $gray_1;
+    text-decoration: none;
+    display: block;
+  }
+}
+.form {
+  width: 582px;
+}
+.contactIcon {
+  margin-right: 24px;
+}
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  .formInput {
+    margin-bottom: 16px !important;
+    input.rfc-input {
+      padding: 18px 30px;
+      border-radius: 15px;
+      height: auto;
+      font-size: 16px !important;
+      line-height: 20px !important;
+      font-family: $montMed;
+    }
+    input.rfc-input::placeholder {
+      font-family: $montMed;
+      font-size: 16px !important;
+      line-height: 20px !important;
+      color: $gray_1;
+    }
+  }
+}
+.textArea {
+  border-radius: 15px;
+  margin-bottom: 16px !important;
+}
+.textArea .rfc-input {
+  border-radius: 15px !important;
+}
+.textArea textarea.rfc-input {
+  height: 125px !important;
+}
+.textArea textarea.rfc-input::placeholder {
+  font-family: $montMed;
+  font-size: 16px;
+  line-height: 20px;
+  color: $gray_1;
+}
+.formInner button {
+  height: 56px;
+  width: 100%;
+  background: linear-gradient(295.72deg, $orange 13.25%, $red 81.31%);
+  border-radius: 15px;
+  font-family: $montSemi;
+  font-size: 20px;
+  line-height: 24px;
+  color: $white;
+  align-items: center;
+}

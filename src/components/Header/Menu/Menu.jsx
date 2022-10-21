@@ -3,7 +3,20 @@ import { Link } from "react-router-dom";
 import "./Menu.scss";
 import mainLogo from "../../../assets/icons/logo.svg";
 
-export const Menu = () => {
+export const Menu = (e) => {
+  const showSubMenu = () => {
+    const subMenu = document.querySelector('.subMenu');
+    const menuItem = document.querySelector('.learnMoreItemMenu>a');
+    subMenu.classList.add("showSubMenu");
+    menuItem.classList.add("showedSubMenu");
+  };
+  const hideSubMenu = () => {
+    const subMenu = document.querySelector('.subMenu');
+    const menuItem = document.querySelector('.learnMoreItemMenu>a');
+    subMenu.classList.remove("showSubMenu");
+    menuItem.classList.remove("showedSubMenu");
+  };
+
   return (
     <div className="menuWrapper">
       <Link to="/" className="logo">
@@ -17,10 +30,30 @@ export const Menu = () => {
               О нас
             </a>
           </li>
-          <li className="menuItem">
+          <li onMouseEnter={showSubMenu} className="menuItem learnMoreItemMenu">
             <a href="#learnMore" className="menuLink">
               Узнайте больше
             </a>
+            <ul onMouseLeave={hideSubMenu} className="subMenu">
+              <li className="subMenuItem">
+                <Link>Исследование</Link>
+              </li>
+              <li className="subMenuItem">
+                <Link>Моделирование</Link>
+              </li>
+              <li className="subMenuItem">
+                <Link>Соц - Продукт</Link>
+              </li>
+              <li className="subMenuItem">
+                <Link>Волонтёрство</Link>
+              </li>
+              <li className="subMenuItem">
+                <Link>Школа/тренинг</Link>
+              </li>
+              <li className="subMenuItem">
+                <Link>Оффлайн</Link>
+              </li>
+            </ul>
           </li>
           <li className="menuItem">
             <a href="#services" className="menuLink">
