@@ -1,21 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Menu.scss";
 import mainLogo from "../../../assets/icons/logo.svg";
+import { BurgerMenu } from "./BurgerMenu";
 
-export const Menu = (e) => {
-  const showSubMenu = () => {
-    const subMenu = document.querySelector('.subMenu');
-    const menuItem = document.querySelector('.learnMoreItemMenu>a');
-    subMenu.classList.add("showSubMenu");
-    menuItem.classList.add("showedSubMenu");
-  };
-  const hideSubMenu = () => {
-    const subMenu = document.querySelector('.subMenu');
-    const menuItem = document.querySelector('.learnMoreItemMenu>a');
-    subMenu.classList.remove("showSubMenu");
-    menuItem.classList.remove("showedSubMenu");
-  };
+export const Menu = () => {
+  const [showedSubMenu, setShowedSubMenu] = useState(false);
 
   return (
     <div className="menuWrapper">
@@ -24,36 +14,47 @@ export const Menu = (e) => {
         <span className="logoName">ISCO LAB</span>
       </Link>
       <nav className="menu">
+        <BurgerMenu />
         <ul className="menuInner">
           <li className="menuItem">
             <a href="#aboutUs" className="menuLink">
               О нас
             </a>
           </li>
-          <li onMouseEnter={showSubMenu} className="menuItem learnMoreItemMenu">
+          <li
+            onMouseEnter={() => setShowedSubMenu(true)}
+            onMouseLeave={() => setShowedSubMenu(false)}
+            className="menuItem learnMoreItemMenu"
+          >
             <a href="#learnMore" className="menuLink">
               Узнайте больше
             </a>
-            <ul onMouseLeave={hideSubMenu} className="subMenu">
-              <li className="subMenuItem">
-                <Link>Исследование</Link>
-              </li>
-              <li className="subMenuItem">
-                <Link>Моделирование</Link>
-              </li>
-              <li className="subMenuItem">
-                <Link>Соц - Продукт</Link>
-              </li>
-              <li className="subMenuItem">
-                <Link>Волонтёрство</Link>
-              </li>
-              <li className="subMenuItem">
-                <Link>Школа/тренинг</Link>
-              </li>
-              <li className="subMenuItem">
-                <Link>Оффлайн</Link>
-              </li>
-            </ul>
+            {showedSubMenu ? (
+              <ul
+                onMouseLeave={() => setShowedSubMenu(false)}
+                onMouseEnter={() => setShowedSubMenu(true)}
+                className="subMenu"
+              >
+                <li className="subMenuItem">
+                  <Link>Исследование</Link>
+                </li>
+                <li className="subMenuItem">
+                  <Link>Моделирование</Link>
+                </li>
+                <li className="subMenuItem">
+                  <Link>Соц - Продукт</Link>
+                </li>
+                <li className="subMenuItem">
+                  <Link>Волонтёрство</Link>
+                </li>
+                <li className="subMenuItem">
+                  <Link>Школа/тренинг</Link>
+                </li>
+                <li className="subMenuItem">
+                  <Link>Оффлайн</Link>
+                </li>
+              </ul>
+            ) : null}
           </li>
           <li className="menuItem">
             <a href="#services" className="menuLink">
