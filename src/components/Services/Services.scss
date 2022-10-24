@@ -73,19 +73,50 @@
 }
 .servBlock1 {
   background: url(../../assets/images/services-1.png);
+  background-size: cover;
 }
 .servBlock2 {
   background: url(../../assets/images/services-2.png);
+  background-size: cover;
 }
 .servBlock3 {
   background: url(../../assets/images/services-3.png);
+  background-size: cover;
 }
 .servBlock4 {
   background: url(../../assets/images/services-4.png);
+  background-size: cover;
 }
 .servBlock5 {
   background: url(../../assets/images/services-5.png);
+  background-size: cover;
 }
 .servBlock6 {
   background: url(../../assets/images/services-6.png);
+  background-size: cover;
+}
+@media screen and (max-width: 1223px) {
+  .servicesBlockWrapper {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 853px) {
+  .servicesBlock {
+    width: 320px;
+    height: 320px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .servicesBlockWrapper {
+    padding: 30px 0;
+  }
+}
+@media screen and (max-width: 380px) {
+  .servicesBlock {
+    width: 300px;
+    height: 300px;
+  }
+  .servicesText {
+    font-size: 16px;
+  }
 }

@@ -37,7 +37,7 @@
   font-family: $montSemi;
   font-size: 26px;
   line-height: 32px;
-  background: linear-gradient(295.72deg, #EE6400 13.25%, #C52F00 81.31%);
+  background: linear-gradient(295.72deg, $orange 13.25%, $red 81.31%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -57,7 +57,71 @@
 .partnerLinks {
   display: flex;
   align-items: center;
+  background: $white;
+  width: fit-content;
+  border-radius: 20px;
 }
 .partnerLink {
   margin-right: 16px;
+  &:last-child {
+    margin-right: unset;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .partnersInner .carousel.carousel-slider .control-arrow {
+    top: 50%;
+    bottom: unset;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background: linear-gradient(295.72deg, $orange 13.25%, $red 81.31%);
+    display: flex;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+  .partnersInner .carousel.carousel-slider .control-arrow:hover {
+    background: linear-gradient(295.72deg, $orange 13.25%, $red 81.31%) !important;
+  }
+}
+@media screen and (max-width: 1370px) {
+  .partnerAboutName {
+    padding-left: 10px;
+  }
+  .partnerAboutDesc {
+    padding-left: 10px;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .bage1,
+  .bage2,
+  .bage3,
+  .bage4 {
+    background-size: contain;
+  }
+}
+@media screen and (max-width: 768px) {
+  .partnersWrapper {
+    padding-bottom: 130px !important;
+  }
+  .partnerBageInner {
+    flex-direction: column;
+  }
+  .ellipse {
+    bottom: 120px !important;
+  }
+}
+@media screen and (max-width: 550px) {
+  .partnersWrapper::after, .partnersWrapper::before {
+    display: none;
+  }
+  .partnersItem {
+    flex-direction: column;
+  }
+  .partnerBage {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 14px;
+  }
 }

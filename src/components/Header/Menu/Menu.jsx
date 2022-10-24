@@ -6,6 +6,7 @@ import { BurgerMenu } from "./BurgerMenu";
 
 export const Menu = () => {
   const [showedSubMenu, setShowedSubMenu] = useState(false);
+  const [showedBurgerMenu, setShowedBurgerMenu] = useState(false);
 
   return (
     <div className="menuWrapper">
@@ -14,7 +15,12 @@ export const Menu = () => {
         <span className="logoName">ISCO LAB</span>
       </Link>
       <nav className="menu">
-        <BurgerMenu />
+        <div onClick={() => setShowedBurgerMenu(true)} className="burgerWrapper">
+          <span className="burger"></span>
+          <span className="burger"></span>
+          <span className="burger"></span>
+        </div>
+        {showedBurgerMenu ? <BurgerMenu showBurger={setShowedBurgerMenu} /> : null}
         <ul className="menuInner">
           <li className="menuItem">
             <a href="#aboutUs" className="menuLink">

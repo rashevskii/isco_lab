@@ -23,7 +23,7 @@
   }
 }
 .sliderInner {
-  width: 750px;
+  max-width: 750px;
   margin: 0 auto;
 }
 .subHeader {
@@ -40,7 +40,7 @@
   justify-content: center;
   align-items: center;
   padding: 20px 46px;
-  width: 654px;
+  max-width: 654px;
   min-height: 166px;
   background: $dark;
   background-clip: padding-box;
@@ -94,4 +94,10 @@
   border-top-right-radius: 70%;
   box-shadow: 0px -50px 42px -36px rgba($black, 0.9);
   z-index: 1;
+}
+@media screen and (max-width: 768px) {
+  .reviewsWrapper {
+    padding-top: 0;
+    padding-bottom: 100px;
+  }
 }

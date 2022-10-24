@@ -113,3 +113,72 @@
   color: $white;
   text-decoration: none;
 }
+
+@media screen and (max-width: 1450px) {
+  .presentationBlockWrapper {
+    padding-left: 125px;
+    padding-right: 125px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .presentationBlockWrapper {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  .blockName {
+    left: 145px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .presentationBlockWrapper {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .blockName {
+    left: 45px;
+  }
+}
+@media screen and (max-width: 1030px) {
+  .presentationBlockWrapper {
+    justify-content: center;
+  }
+  .presentationBlock {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .LearMoreWrapper::before {
+    display: none;
+  }
+  .presentationBlock {
+    width: 300px;
+  }
+  .aboutUsInner {
+    padding-bottom: 0;
+  }
+  .aboutUsName {
+    min-height: 945px;
+  }
+  .blockName {
+    top: 235px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .presentationBlockWrapper {
+    padding: 45px 0;
+  }
+  .blockName {
+    left: 15px;
+  }
+  .organisationName {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .organisationName {
+    font-size: 24px;
+  }
+}

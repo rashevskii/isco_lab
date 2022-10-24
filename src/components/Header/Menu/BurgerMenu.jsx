@@ -1,14 +1,18 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-export const BurgerMenu = () => {
+export const BurgerMenu = ({ showBurger }) => {
+
+  useEffect(() => {
+    const burgerMenu = document.querySelector('.burgerMenu');
+    const links = burgerMenu.querySelectorAll('a');
+    links.forEach(link => link.addEventListener('click', () => showBurger(false)));
+  }, [showBurger]);
+
   return (
     <div className="burgerMenu">
-      <div className="burgerWrapper">
-        <span className="burger"></span>
-        <span className="burger"></span>
-        <span className="burger"></span>
-      </div>
-      <div className="burgerMenuWrapper">
+      <div  className="burgerMenuWrapper">
+        <span onClick={() => showBurger(false)} className="closeMenuBurger">+</span>
         <ul className="burgerMenuList">
           <li className="menuBurgerItem">
             <a href="#aboutUs" className="menuLink">

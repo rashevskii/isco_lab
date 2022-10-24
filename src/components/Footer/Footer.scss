@@ -115,3 +115,29 @@
   color: $white;
   align-items: center;
 }
+@media screen and (max-width: 1560px) {
+  .footerWrapper::before {
+    bottom: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footerWrapper::after {
+    display: none;
+  }
+  .feedback {
+    flex-direction: column;
+  }
+  .form {
+    width: 100%;
+    max-width: 100%;
+  }
+  .footerWrapper::before {
+    z-index: -1;
+  }
+}
+@media screen and (max-width: 550px) {
+  .inputWrapper {
+    flex-direction: column;
+    gap: unset;
+  }
+}

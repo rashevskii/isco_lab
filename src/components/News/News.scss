@@ -6,13 +6,19 @@
 .coupleItems {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 .newsItem {
   width: 674px;
-  height: 390px;
+  min-height: 390px;
   border-radius: 20px;
   position: relative;
+}
+.newsItem:first-child {
+  margin-right: 20px;
+}
+.newsItem:last-child {
+  margin-left: 20px;
 }
 .NewsItemImg {
   position: relative;
@@ -87,4 +93,35 @@
 .carousel .control-dots .dot.selected, .carousel .control-dots .dot:hover {
   background: linear-gradient(295.72deg, $orange 13.25%, $red 81.31%) !important;
   height: 5px !important;
+}
+@media screen and (max-width: 1450px) {
+  .carousel .control-prev.control-arrow {
+    left: 0px !important;
+  }
+  .carousel .control-next.control-arrow {
+    right: 0px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .newsWrapper {
+    margin-top: 60px;
+  }
+  .coupleItems {
+    flex-direction: column;
+  }
+  .newsItem {
+    width: 100%;
+  }
+  .newsItem:first-child {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .newsItem:last-child {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 550px) {
+  .textBlock {
+    padding: 9px 15px 15px 15px;
+  }
 }

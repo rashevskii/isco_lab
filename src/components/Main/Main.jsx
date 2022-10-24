@@ -14,14 +14,14 @@ export const Main = () => {
   return (
     <div className="container headerContainer">
       <Header />
-      {/* <AboutUs />
+      <AboutUs />
       <LearnMore />
       <Services />
       <News />
       <Partners />
       <Reviews />
       <WeOnMap />
-      <Footer /> */}
+      <Footer />
     </div>
   )
 };
