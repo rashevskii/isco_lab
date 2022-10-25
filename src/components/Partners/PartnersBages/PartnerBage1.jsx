@@ -14,7 +14,7 @@ export const PartnerBage1 = ({ title, text, logo, links }) => {
           <div className="partnerLinks">
             {links ? links.map(link => {
               return (
-                <Link className="partnerLink" to={link.href}>
+                <Link key={link.path} className="partnerLink" to={link.href}>
                   <img src={link.path} alt="Ссылка на соцсети" />
                 </Link>
               )

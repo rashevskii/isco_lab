@@ -22,18 +22,18 @@ export const BurgerMenu = ({ showBurger }) => {
         <span onClick={() => showBurger(false)} className="closeMenuBurger">+</span>
         <ul className="burgerMenuList">
           <li className="menuBurgerItem">
-            <a href="#aboutUs" className="menuLink">
-              О нас
-            </a>
-          </li>
-          <li className="menuBurgerItem learnMoreBurgerMenu">
-          {location === "/" ? (
+            {location === "/" ? (
               <a href="#aboutUs" className="menuLink">
                 О нас
               </a> 
             ) : (
               <HashLink to={"/#aboutUs"} className="menuLink">О нас</HashLink>
             )}
+          </li>
+          <li className="menuBurgerItem learnMoreBurgerMenu">
+            <a href="#learnMore" className="menuLink">
+              Узнайте больше
+            </a>
             <ul className="subMenuBurger">
               <li className="subMenuBurgerItem">
                 <Link to={'/research'}>Исследование</Link>

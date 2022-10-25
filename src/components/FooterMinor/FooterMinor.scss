@@ -70,3 +70,79 @@
     background: $black;
   }
 }
+@media screen and (max-width: 1150px) {
+  .footerMinorWrapper {
+    .squareWithEarth {
+      display: none;
+    }
+    .carousel .thumbs-wrapper {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .carousel .thumb {
+      font-size: 12px;
+    }
+  } 
+}
+@media screen and (max-width: 900px) {
+  .footerCarouselItem {
+    .footerCarouselDesc {
+      max-width: 524px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .footerMinorWrapper {
+    .carousel .thumbs {
+      flex-wrap: wrap;
+    }
+    .carousel .thumb {
+      border-radius: 20px;
+      margin: 5px;
+      &:last-child,
+      &:first-child {
+        border-radius: 20px;
+      }
+    }
+    .footerEllipse {
+      display: none;
+    }
+  }
+  .footerCarouselItem {
+    flex-direction: column;
+    .footerCarouselDesc {
+      max-width: 100%;
+    }
+    .footerCarouselTitle {
+      font-size: 40px;
+    }
+  }
+}
+@media screen and (max-width: 509px) {
+  .footerMinorWrapper {
+    .carousel .thumbs {
+      transform: none !important;
+    }
+    .carousel .thumb {
+      width: 100% !important;
+      font-size: 16px;
+      height: 50px;
+    }
+    .carousel .control-prev.control-arrow,
+    .carousel .control-next.control-arrow {
+      display: none !important;
+    }
+  }
+  .footerCarouselItem {
+    .footerCarouselDesc {
+      padding-left: 0;
+    }
+    .footerCarouselTitle {
+      font-size: 25px;
+      line-height: 45px;
+    }
+    .footerCarouselText {
+      margin-top: 0;
+    }
+  }
+}

@@ -17,6 +17,7 @@
     text-transform: uppercase;
     margin: 0;
     cursor: pointer;
+    text-transform: uppercase;
   }
   .stage {
     background: linear-gradient(295.72deg, $orange 13.25%, $red 81.31%);
@@ -24,6 +25,7 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+    text-transform: uppercase;
   }
   .accordionContent {
     font-size: 15px;

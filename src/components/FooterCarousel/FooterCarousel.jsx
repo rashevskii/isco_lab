@@ -6,7 +6,7 @@ export const FooterCarousel = () => {
   const renderThumbs = (items) => {
     return items.map((item) => {
       return (
-        <div>{item.props.title}</div>
+        <div key={item.props.title}>{item.props.title}</div>
       );  
   });
 };
@@ -19,6 +19,8 @@ export const FooterCarousel = () => {
         renderThumbs={(items) => renderThumbs(items)}
         showArrows={false}
         swipeable={false}
+        preventMovementUntilSwipeScrollTolerance={true}
+        swipeScrollTolerance={50}
       >
         <FooterCarouselItem
           content={
