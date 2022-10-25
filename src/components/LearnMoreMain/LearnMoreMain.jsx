@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import { ColorButton } from "../../ui/ColorButton/ColorButton";
 import { HeaderSection } from "../../ui/HeaderSection/HeaderSection";
-import './LearnMore.scss';
+import './LearnMoreMain.scss';
 import volunteer from '../../assets/icons/volunteer.svg';
 import sponsor from '../../assets/icons/sponsor.svg';
 import thumbup from '../../assets/images/thumbup.png'; 
 
-export const LearnMore = () => {
+export const LearnMoreMain = () => {
   return (
     <div className="LearMoreWrapper" id="learnMore">
       <div className="blockContainer">

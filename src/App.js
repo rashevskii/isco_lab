@@ -1,5 +1,5 @@
 import './scss/Main.scss';
-import { Main } from './components/Main/Main';
+import { Main } from './pages/Main/Main';
 
 function App() {
   return <Main />;

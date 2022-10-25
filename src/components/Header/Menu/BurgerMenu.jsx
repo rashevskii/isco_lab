@@ -1,13 +1,20 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 
 export const BurgerMenu = ({ showBurger }) => {
+  const [location, setLocation] = useState("");
+
+  useEffect(() => {
+    setLocation(document.location.pathname);
+  }, []);
 
   useEffect(() => {
     const burgerMenu = document.querySelector('.burgerMenu');
     const links = burgerMenu.querySelectorAll('a');
     links.forEach(link => link.addEventListener('click', () => showBurger(false)));
   }, [showBurger]);
+    
 
   return (
     <div className="burgerMenu">
@@ -20,12 +27,16 @@ export const BurgerMenu = ({ showBurger }) => {
             </a>
           </li>
           <li className="menuBurgerItem learnMoreBurgerMenu">
-            <a href="#learnMore" className="menuLink">
-              Узнайте больше
-            </a>
+          {location === "/" ? (
+              <a href="#aboutUs" className="menuLink">
+                О нас
+              </a> 
+            ) : (
+              <HashLink to={"/#aboutUs"} className="menuLink">О нас</HashLink>
+            )}
             <ul className="subMenuBurger">
               <li className="subMenuBurgerItem">
-                <Link>Исследование</Link>
+                <Link to={'/research'}>Исследование</Link>
               </li>
               <li className="subMenuBurgerItem">
                 <Link>Моделирование</Link>

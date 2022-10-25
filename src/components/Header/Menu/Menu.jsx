@@ -1,12 +1,18 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Menu.scss";
 import mainLogo from "../../../assets/icons/logo.svg";
 import { BurgerMenu } from "./BurgerMenu";
+import { HashLink } from 'react-router-hash-link';
 
 export const Menu = () => {
   const [showedSubMenu, setShowedSubMenu] = useState(false);
   const [showedBurgerMenu, setShowedBurgerMenu] = useState(false);
+  const [location, setLocation] = useState("");
+
+  useEffect(() => {
+    setLocation(document.location.pathname);
+  }, []);
 
   return (
     <div className="menuWrapper">
@@ -23,9 +29,13 @@ export const Menu = () => {
         {showedBurgerMenu ? <BurgerMenu showBurger={setShowedBurgerMenu} /> : null}
         <ul className="menuInner">
           <li className="menuItem">
-            <a href="#aboutUs" className="menuLink">
-              О нас
-            </a>
+            {location === "/" ? (
+              <a href="#aboutUs" className="menuLink">
+                О нас
+              </a> 
+            ) : (
+              <HashLink to={"/#aboutUs"} className="menuLink">О нас</HashLink>
+            )}
           </li>
           <li
             onMouseEnter={() => setShowedSubMenu(true)}
@@ -42,7 +52,7 @@ export const Menu = () => {
                 className="subMenu"
               >
                 <li className="subMenuItem">
-                  <Link>Исследование</Link>
+                  <Link to={'/research'}>Исследование</Link>
                 </li>
                 <li className="subMenuItem">
                   <Link>Моделирование</Link>

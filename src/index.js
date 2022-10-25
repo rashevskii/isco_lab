@@ -5,6 +5,7 @@ import App from './App';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import reportWebVitals from './reportWebVitals';
 import { initializeApp } from "firebase/app";
+import { Research } from './pages/Research/Reasearch';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
     errorElement: <ErrorPage />,
+  },
+  {
+    path: "/research",
+    element: <Research />
   },
 ]);
 

@@ -1,0 +1,25 @@
+.researchContainer {
+  background-position: -40px -125px;
+  .headerWrapper::after {
+    bottom: 50px;
+    left: 20px;
+    transform: rotate(-6deg);
+  }
+  .headerWrapper::before {
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 120px;
+    background: url(../../assets/images/lines.svg) center no-repeat;
+    transform: rotate(-15deg);
+    right: -195px;
+    top: 48%;
+  }
+  .headerBlockWrapper {
+    min-height: 450px;
+    margin-top: 75px;
+    img {
+      margin-bottom: -190px;
+    }
+  }
+}
