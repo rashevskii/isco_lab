@@ -1,0 +1,40 @@
+@import "../../../scss/variables.scss";
+
+.footerCarouselItem {
+  display: flex;
+  .footerCarouselDesc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 624px;
+    padding-left: 28px;
+  }
+  .footerCarouselTitle {
+    font-family: $montSemi;
+    font-size: 55px;
+    line-height: 67px;
+    color: $white;
+    margin: 0;
+    text-align: left;
+  }
+  .footerCarouselText {
+    font-size: 19px;
+    line-height: 23px;
+    color: $reviewsContent;
+    text-align: left;
+  }
+  .footerCarouselLink {
+    width: 205px;
+    height: 48px;
+    background: linear-gradient(295.72deg, $orange 13.25%, $red 81.31%);
+    border-radius: 3px;
+    font-family: $montSemi;
+    font-size: 19px;
+    line-height: 23px;
+    color: $white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -53,8 +53,10 @@ export const ReviewsCarousel = () => {
         Повседневная практика показывает, что высокое качество позиционных
         исследований однозначно фиксирует необходимость форм воздействия.
       </p>
-      <Carousel infiniteLoop={true} showStatus={false}>
-        {slides.map(slide => <ReviewsItem name={slide.name} content={slide.content} />)}
+      <Carousel infiniteLoop={true} showStatus={false} showThumbs={false}>
+        {slides.map((slide) => (
+          <ReviewsItem name={slide.name} content={slide.content} />
+        ))}
       </Carousel>
     </div>
   );

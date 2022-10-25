@@ -3,7 +3,12 @@ import { PartnersItem } from "./PartnersItem";
 
 export const PartnersCarousel = () => {
   return (
-    <Carousel infiniteLoop={true} showStatus={false} swipeable={false}>
+    <Carousel
+      infiniteLoop={true}
+      showStatus={false}
+      showThumbs={false}
+      swipeable={false}
+    >
       <PartnersItem />
       <PartnersItem />
       <PartnersItem />
